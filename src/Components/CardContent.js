@@ -7,7 +7,7 @@ const CardContent = () => {
     useEffect(() => {
         const fetchData = () => {
           axios
-            .get('https://api.nasa.gov/planetary/apod?api_key=9blwVFUnMed89wkaL9X8zjE5hJe5mtDnczkcQwg9&date=2019-07-01')
+            .get('https://api.nasa.gov/planetary/apod?api_key=9blwVFUnMed89wkaL9X8zjE5hJe5mtDnczkcQwg9')
             .then(res => setNasaData(res.data))
            
         };
